@@ -1,0 +1,126 @@
+body {
+  background-color: rgb(250, 235, 215, 0.3);
+}
+h1 {
+  font-family: Arial, Helvetica, sans-serif;
+}
+h2 {
+  font-family: "Lucida Console", "Courier New", monospace;
+}
+h3 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+p {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+header {
+  background-color: rgb(233, 198, 124, 0.2);
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+.sidenav {
+  height: 1930px; /* Full-height: remove this if you want "auto" height */
+  width: 300px; /* Set the width of the sidebar */
+  position: absolute; /* Fixed Sidebar (stay in place on scroll) */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+  background-color: rgb(233, 198, 124, 0.2);
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 20px;
+  margin-top: 260px;
+  margin-left: 10px;
+}
+.sidenav a {
+  text-decoration: none;
+  display: block;
+  padding: 24px 30px 24px 30px;
+  margin: 0px 30px 40px 30px;
+  width: 150px;
+  border-radius: 25px;
+  background-color: rgb(204, 142, 71);
+  color: black;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+  text-align: center;
+}
+.sidenav a:hover {
+  color: white;
+  background: black;
+}
+main {
+  margin-left: 300px; /* Same as the width of the sidebar */
+  padding: 0px 10px;
+}
+img {
+  float: left;
+  display: block;
+  margin-left: 42px;
+  margin-right: 45px;
+  margin-bottom: 100px;
+}
+.video {
+  text-align: center;
+}
+.table {
+  text-align: center;
+}
+table {
+  border: 3px solid black;
+  border-radius: 0 0 25px 25px;
+  color: navy;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  margin: 50px 50px 0 300px;
+}
+tr:nth-child(odd) {
+  background: burlywood;
+}
+tr:nth-child(even) {
+  background: lightgrey;
+}
+tr:last-child {
+  border-radius: 0 0 25px 25px;
+}
+tr:last-child > td:first-child {
+  border-radius: 0 0 0 25px;
+}
+td {
+  padding: 25px;
+  text-align: center;
+}
+th {
+  padding: 25px;
+  text-align: center;
+}
+caption {
+  background: rgb(5, 50, 56);
+  border: 3px 3px 0 3px solid black;
+  border-radius: 25px 25px 0 0;
+  color: white;
+  padding: 30px;
+  text-transform: uppercase;
+  font-family: fantasy;
+  font-size: xx-large;
+}
+form {
+  font-family: sans-serif;
+  background-color: rgb(0, 0, 0, 0.1);
+  font-size: small;
+  margin: 40px 22px 22px 40px;
+  border: 5px solid black;
+  border-radius: 20px;
+  color: black;
+  padding: 20px;
+  width: 600px;
+}
+footer {
+  background-color: rgb(233, 198, 124, 0.2);
+  padding-bottom: 40px;
+  padding-top: 40px;
+  margin-top: 10px;
+  margin-left: 5px;
+}
