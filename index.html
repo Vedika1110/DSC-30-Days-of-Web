@@ -1,129 +1,288 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel = "stylesheet" href = "style.css">
-    <title>My Portfolio page</title>
-</head>
-<body>
-  <header style="text-align: center;">
-      <h1>My Portfolio Page</h1>
-      <h3>My name is Alex Mayer</h3>
-      <h4>I am a University student and beginner in web-development and this is my first project with HTML5. Always looking forward to learn more!!</h4>
-  </header> 
-  <div class="sidenav">
-      <a href = "#about">About Me</a>
-      <a href = "#travel">Places</a>
-      <a href = "#video">Video</a>
-      <a href = "#table">Calender</a>
-      <a href = "#form">Contact us</a>
-  </div>
-  <main>
-    
-      <!--Me in a NUTSHELL-->
-      <div id = "about">
-          <h2>Me in NUTSHELL</h2>
-          <P>I love to read and write <em> 'KAFKA ON THE SHORE' </em> is my favourite book so far</P>
-          <p>Sometimes I also like to work with technical stuff as it is my major in college. I find web-dev pretty awesome and I am curious ad enthusiastic person so couldn't resist myself from digging furthur into it!!</p>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    />
+
+    <!-- Bootstrap Js -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+    <!-- My CSS -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/996973c893.js"></script>
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Baloo+Tamma+2:wght@400;500;600;700;800&family=Roboto+Slab:wght@200;400;600;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Portfolio</title>
+  </head>
+  <body>
+    <div class="container navigation pt-3">
+      <div class="row">
+        <div class="col-6 d-flex justify-content-start align-items-center">
+          <i class="fas fa-code fa-2x text-warning pb-3"></i>
+          <h5 class="d-inline pl-2">Portfolio</h5>
+        </div>
+        <div class="col-6 pt-2">
+          <div
+            class="row text-center p-0 d-flex justify-content-end align-items-center"
+          >
+            <div class="col-3">
+              <a href="#about" class="navigation-link">About</a>
+            </div>
+            <div class="col-3">
+              <a href="#projects" class="navigation-link"
+                >Projects</a
+              >
+            </div>
+            <div class="col-3">
+              <a href="#social-media" class="navigation-link"
+                >Social Media</a
+              >
+            </div>
+            </div>
+          </div>
+        </div>
       </div>
-      <!--Travel-->
-      <div id = "travel">
-          <h2>Places I Loved the Most!</h2>
-          <p>I am also a bit of a traveller and love visiting places with <em>flora and fauna</em></p>
-          <p>Here are some places that I loved the most</p>
-          <!--Images of Places-->
-          <div>
-              <div class = "travel">
-                  <img src="Forest.jpg" alt = "Forst" width = 300 height = 300>
-              </div>
-              <div class = "travel">
-                  <img src="Europe.jpg" alt = "Europe" width =300 height= 300>
-              </div>
-              <div class = "travel">
-                  <img src="Beach.jpg" alt = "Beach" width = 300 height = 300>
-              </div><br><br>
-              <p>You can get the best places to visit here <a href = "https://en.wikipedia.org/wiki/Lists_of_tourist_attractions">Click here</a></p>
+    </div>
+
+    <!-- Main Container -->
+    <div class="main-container container">
+      <div class="row main_row">
+        <div class="col-6">
+          <h2>Hello, I'm</h2>
+          <h1 class="text-warning m-heading">Alex Mayer</h1>
+          <h2>Web Developer</h2>
+        </div>
+        <div class="col-6">
+          <img
+            src="./images/coding_girl.png"
+            class="img-fluid"
+          />
+        </div>
+      </div>
+    </div>
+
+    <!-- About Section -->
+    <div id="about" class="container about p-5">
+      <div class="row">
+        <div class="col-6">
+          <img src="./images/office_girl.jpg" class="img-fluid pt-5" />
+        </div>
+        <div class="col-6 pl-5 pt-5 pb-5">
+          <h3 class="text-warning">About Me</h3>
+          <h1 class="m-heading">A little bit about me</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis
+            eligendi natus, ex maiores
+            <b class="text-warning">quaerat provident</b> iusto tenetur vero
+            ipsum. Beatae expedita obcaecati odio dignissimos itaque nulla
+            voluptatum doloremque sed iusto!
+          </p>
+          <br />
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis
+            magni <b class="text-warning">adipisci sunt eum</b>, reprehenderit
+            dignissimos quaerat maiores ad. Magni, totam iure. Doloribus ea
+            <b class="text-warning">molestiae deleniti</b> excepturi iure neque,
+            harum illum!
+          </p>
+          <button class="btn btn-outline-warning">Learn More</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Projects Section -->
+    <div id="projects" class="container mt-5 pt-5">
+      <h1 class="text-warning mb-3 pb-2">My Projects</h1>
+      <div class="row">
+        <div class="col-4 mb-5">
+          <div class="card" style="width: 18rem;">
+            <img
+              src="./images/messaging.svg"
+              class="card-img-top"
+              style="height: 13rem;"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title">Messaging Web App</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+              <a href="#" class="btn btn-warning">See Project</a>
+            </div>
           </div>
-        </br>
-          <div class = "video" id = "video">
-              <h3>
-                  The beach was so soothing and here is the video of calming waves and sound of ocean...!!!
-              </h3>
-              <video width ="600" height ="600" controls>
-                  <source src="Video.mp4" type = "video/mp4">
-              </video> 
+        </div>
+        <div class="col-4 mb-5">
+          <div class="card" style="width: 18rem;">
+            <img
+              src="./images/fitness.svg"
+              class="card-img-top img-fluid"
+              alt="..."
+              style="height: 13rem;"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Fitness Web App</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+              <a href="#" class="btn btn-warning">See Project</a>
+            </div>
           </div>
         </div>
-    </br>
-        <!--Table-->
-        <div class = "table" id = "table">
-            <h2>Here I tried to make the calender of February 2021</h2>
-        <table class = table>
-		<caption>Feb 2021</caption>
-		<tr>
-			<th>Sun</th>
-			<th>Mon</th>
-			<th>Tue</th>
-			<th>Wed</th>
-			<th>Thu</th>
-			<th>Fri</th>
-			<th>Sat</th>
-		</tr>
-		<tr>
-			<td></td>
-			<td>1</td>
-			<td>2</td>
-			<td>3</td>
-			<td>4</td>
-			<td>5</td>
-			<td>6</td>
-		</tr>
-		<tr>
-			<td>7</td>
-			<td>8</td>
-			<td>9</td>
-			<td>10</td>
-			<td>11</td>
-			<td>13</td>
-			<td>14</td>
-		</tr>
-		<tr>
-			<td>15</td>
-			<td>16</td>
-			<td>17</td>
-			<td>18</td>
-			<td>19</td>
-			<td>20</td>
-			<td>21</td>
-		</tr>
-		<tr>
-			<td>22</td>
-			<td>23</td>
-			<td>24</td>
-			<td>25</td>
-			<td>26</td>
-			<td>27</td>
-			<td>28</td>
-		</tr>
-    </table>
+        <div class="col-4 mb-5">
+          <div class="card" style="width: 18rem;">
+            <img
+              src="./images/e_commerce_platform.svg"
+              class="card-img-top"
+              alt="..."
+              style="height: 13rem;"
+            />
+            <div class="card-body">
+              <h5 class="card-title">E-Commerce Platform</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+              <a href="#" class="btn btn-warning">See Project</a>
+            </div>
+          </div>
         </div>
-  </main>
-  <footer>
-        <div id = "form">
-            <h2 style="margin-left: 40px;">Here's a form using which you can contact me: </h2>
-            <form>
-                <label for="fname">First name:</label>
-                <input type="text" id="fname" name="fname"><br><br><br>
-                <label for="lname">Last name:</label>
-                <input type="text" id="lname" name="lname"><br><br><br>
-                <label for="email">Enter your email:</label>
-                <input type="email" id="email" name="email"><br><br><br>
-                <label for="quantity">Add Phone no.</label>
-                <input type="number" id="quantity" name="quantity" min="1" max="10"><br><br><br>
-                <button type="button" onclick="alert('Your form is submitted')">Submit</button>
-            </form>
+        <div class="col-4 mb-5">
+          <div class="card" style="width: 18rem;">
+            <img
+              src="./images/music.svg"
+              class="card-img-top"
+              alt="..."
+              style="height: 13rem;"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Music Player</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+              <a href="#" class="btn btn-warning">See Project</a>
+            </div>
+          </div>
         </div>
-    </footer> 
-</body>
+        <div class="col-4 mb-5">
+          <div class="card" style="width: 18rem;">
+            <img
+              src="./images/photography.svg"
+              class="card-img-top"
+              alt="..."
+              style="height: 13rem;"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Photography Platform</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+              <a href="#" class="btn btn-warning">See Project</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-4 mb-5">
+          <div class="card" style="width: 18rem;">
+            <img
+              src="./images/web_scraping.svg"
+              class="card-img-top"
+              alt="..."
+              style="height: 13rem;"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Manga Scraping Web App</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+              <a href="#" class="btn btn-warning">See Project</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Social Media Section -->
+    <div id="social-media" class="container-fluid">
+      <div class="container py-5">
+        <h4 class="text-warning">Social Media</h4>
+        <h1 class="m-heading">Let's be friends</h1>
+        <div class="row pt-5">
+          <div class="col-3 media_link btn" href="#">
+            <div class="row">
+              <div class="col-6 d-flex justify-content-start">
+                <h3 class="m-0 pt-2">LinkedIn</h3>
+              </div>
+              <div class="col-6 d-flex justify-content-end align-items-center">
+                <i class="fab fa-linkedin-in fa-2x text-secondary"></i>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-3 media_link btn">
+            <div class="row">
+              <div class="col-6 d-flex justify-content-start">
+                <h3 class="m-0 pt-2">Github</h3>
+              </div>
+              <div class="col-6 d-flex justify-content-end align-items-center">
+                <i class="fab fa-github fa-2x text-secondary"></i>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-3 media_link btn">
+            <div class="row">
+              <div class="col-6 d-flex justify-content-start">
+                <h3 class="m-0 pt-2">Youtube</h3>
+              </div>
+              <div class="col-6 d-flex justify-content-end align-items-center">
+                <i class="fab fa-youtube fa-2x text-secondary"></i>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-3 media_link bg-warning btn">
+            <div class="row">
+              <div class="col-6 d-flex justify-content-start">
+                <h3 class="m-0 pt-2 text-dark">Email</h3>
+              </div>
+              <div class="col-6 d-flex justify-content-end align-items-center">
+                <i class="fas fa-envelope fa-2x text-secondary"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container text-muted text-center py-3 mt-5">
+        <h5>
+          Copyright &copy; 2020 |
+          <a class="text-decoration-none" href="#about"
+            >Alex Mayer</a
+          >
+        </h5>
+      </div>
+    </footer>
+  </body>
 </html>
